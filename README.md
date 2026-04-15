@@ -59,8 +59,8 @@ Then open `http://localhost:5500` in your browser.
 
 Add your hosted production link here after deploying to Netlify, Vercel, or GitHub Pages.
 
-- Live URL: _to be added_
-- Repository URL: _to be added_
+- Live URL: https://senatorcode.github.io/HNG-STAGE-1B/
+- Repository URL: https://github.com/SenatorCode/HNG-STAGE-1B
 
 ## Submission checklist
 
@@ -69,8 +69,8 @@ Add your hosted production link here after deploying to Netlify, Vercel, or GitH
 - [x] Semantic HTML used
 - [x] Responsive styling added
 - [x] Accessibility basics covered
-- [ ] Live deployment link added
-- [ ] Final repo link added
+- [x] Live deployment link added
+- [x] Final repo link added
 
 ## Notes
 
