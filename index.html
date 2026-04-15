@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Accessible and responsive profile card built with semantic HTML, CSS, and vanilla JavaScript."
+    />
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page" data-testid="test-page">
+      <article
+        class="profile-card"
+        data-testid="test-profile-card"
+        aria-labelledby="test-user-name"
+      >
+        <header class="profile-card__header" data-testid="test-profile-card-header">
+          <figure class="profile-card__avatar" data-testid="test-avatar-figure">
+            <img
+              class="profile-card__avatar-image"
+              data-testid="test-user-avatar"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80"
+              alt="Portrait of a smiling profile owner wearing a light shirt"
+              width="240"
+              height="240"
+            />
+          </figure>
+
+          <div class="profile-card__identity" data-testid="test-profile-identity">
+            <p class="profile-card__eyebrow" data-testid="test-profile-eyebrow">
+              Frontend Wizard
+            </p>
+            <h1 class="profile-card__name" data-testid="test-user-name" id="test-user-name">
+              Amina Okafor
+            </h1>
+            <p class="profile-card__role" data-testid="test-profile-role">
+              UI developer building accessible, testable interfaces.
+            </p>
+          </div>
+        </header>
+
+        <section class="profile-card__section" data-testid="test-bio-section" aria-labelledby="bio-title">
+          <h2 class="profile-card__section-title" data-testid="test-bio-title" id="bio-title">
+            Biography
+          </h2>
+          <p class="profile-card__bio" data-testid="test-user-bio">
+            I enjoy crafting thoughtful user interfaces with semantic HTML, modern CSS, and
+            vanilla JavaScript. My focus is on accessibility, responsive design, and clean
+            test-friendly code that works well across devices.
+          </p>
+        </section>
+
+        <section class="profile-card__section" data-testid="test-time-section" aria-labelledby="time-title">
+          <h2 class="profile-card__section-title" data-testid="test-time-title" id="time-title">
+            Current Time
+          </h2>
+          <p class="profile-card__time-copy" data-testid="test-time-copy">
+            Epoch time in milliseconds:
+          </p>
+          <time
+            class="profile-card__time"
+            data-testid="test-user-time"
+            id="user-time"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            0
+          </time>
+        </section>
+
+        <section class="profile-card__section" data-testid="test-social-section" aria-labelledby="social-title">
+          <h2 class="profile-card__section-title" data-testid="test-social-title" id="social-title">
+            Social Links
+          </h2>
+          <nav class="profile-card__socials" data-testid="test-user-social-links" aria-label="Social links">
+            <ul class="social-list" data-testid="test-social-list">
+              <li class="social-list__item" data-testid="test-user-social-item-twitter">
+                <a
+                  class="social-list__link"
+                  data-testid="test-user-social-twitter"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="social-list__item" data-testid="test-user-social-item-linkedin">
+                <a
+                  class="social-list__link"
+                  data-testid="test-user-social-linkedin"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li class="social-list__item" data-testid="test-user-social-item-github">
+                <a
+                  class="social-list__link"
+                  data-testid="test-user-social-github"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="profile-card__section profile-card__lists" data-testid="test-lists-section">
+          <section class="profile-card__list-block" data-testid="test-hobbies-block" aria-labelledby="hobbies-title">
+            <h2 class="profile-card__section-title" data-testid="test-hobbies-title" id="hobbies-title">
+              Hobbies
+            </h2>
+            <ul class="content-list" data-testid="test-user-hobbies">
+              <li class="content-list__item" data-testid="test-user-hobby-reading">Reading</li>
+              <li class="content-list__item" data-testid="test-user-hobby-design">Design experiments</li>
+              <li class="content-list__item" data-testid="test-user-hobby-coding">Building small apps</li>
+            </ul>
+          </section>
+
+          <section class="profile-card__list-block" data-testid="test-dislikes-block" aria-labelledby="dislikes-title">
+            <h2 class="profile-card__section-title" data-testid="test-dislikes-title" id="dislikes-title">
+              Dislikes
+            </h2>
+            <ul class="content-list content-list--dislikes" data-testid="test-user-dislikes">
+              <li class="content-list__item" data-testid="test-user-dislike-clutter">Cluttered layouts</li>
+              <li class="content-list__item" data-testid="test-user-dislike-contrast">Poor contrast</li>
+              <li class="content-list__item" data-testid="test-user-dislike-inaccessible">Inaccessible interactions</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
